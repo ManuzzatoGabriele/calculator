@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    
+    <div id="display">
+        <p id="operazione"></p>
+    </div>
+    
+    <div id="input">
+        <table id="table-input">
+            
+            <tr>
+                <td><button onclick="visualizza(7)">7</button></td>
+                <td><button onclick="visualizza(8)">8</button></td>
+                <td><button onclick="visualizza(9)">9</button></td>
+                <td><button class="operazione" onclick="operatore('÷')">÷</button></td>
+                <td><button class="operazione" onclick="operatore('+')">+</button></td>
+                
+            </tr>
+
+            <tr>
+                <td><button onclick="visualizza(4)">4</button></td>
+                <td><button onclick="visualizza(5)">5</button></td>
+                <td><button onclick="visualizza(6)">6</button></td>
+                <td><button class="operazione" onclick="operatore('×')">×</button></td>
+                <td><button class="operazione" onclick="operatore('^')">^</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="visualizza(1)">1</button></td>
+                <td><button onclick="visualizza(2)">2</button></td>
+                <td><button onclick="visualizza(3)">3</button></td>
+                <td><button class="operazione" onclick="operatore('-')">-</button></td>
+                <td><button class="operazione" onclick="operatore('√')">√</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="visualizza(0)">0</button></td>
+                <td><button onclick="visualizza('.')">.</button></td>
+                <td><button class="operazione" onclick="cancella()">AC</button></td>
+                <td colspan="2"><button class="operazione" onclick="calcolo()">=</button></td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+</html>
